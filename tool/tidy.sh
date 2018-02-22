@@ -15,6 +15,11 @@ if ! which perltidy > /dev/null 2>&1; then
     exit 1
 fi
 
+if [ -z "$(ls /tmp/mess)" ]; then
+    echo "Directory /tmp/mess is empty"
+    exit 1
+fi
+
 find -name '*.tdy' -delete
 find . \( -name '*.p[lm]' -o -name '*.t' \) -print0 | xargs -0 perltidy --pro=/etc/os-autoinst/.perltidyrc
 
