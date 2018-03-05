@@ -10,13 +10,13 @@ Find it here: https://hub.docker.com/r/binarysequence/os-autoinst-perl-tidy/
 
 ```bash
 # Pull image
-docker pull binarysequence/os-autoinst-perl-tidy:20180222-20180101
+docker pull binarysequence/os-autoinst-perl-tidy:2018-03-05_2018-02-20
 
 # Run container to check (files won't be changed)
-docker container run -v /Users/sergio/github/os-autoinst-distri-opensuse/:/tmp/mess binarysequence/os-autoinst-perl-tidy:20180222-20180101
+docker container run -v /Users/sergio/github/os-autoinst-distri-opensuse/:/tmp/mess binarysequence/os-autoinst-perl-tidy:2018-03-05_2018-02-20
 
 # Run container to edit files in place
-docker container run -v /Users/sergio/github/os-autoinst-distri-opensuse/:/tmp/mess binarysequence/os-autoinst-perl-tidy:20180222-20180101 --replace
+docker container run -v /Users/sergio/github/os-autoinst-distri-opensuse/:/tmp/mess binarysequence/os-autoinst-perl-tidy:2018-03-05_2018-02-20 --replace
 
 # The volume is the project that you want to tidy (os-autoinst, os-autoinst-distri-opensuse, etc)
 ```
