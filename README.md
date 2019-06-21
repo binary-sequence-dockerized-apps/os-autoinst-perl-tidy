@@ -40,7 +40,7 @@ id
 docker container run --user 1000 -v /home/mansilla/github/os-autoinst-distri-opensuse/:/tmp/mess binarysequence/os-autoinst-perl-tidy:2018-03-05_2018-02-20 --replace
 ```
 
-In my case, I have mit github code directy in used by a local openQA instance and have the user geekotest as owner. So in my case I have to find the uid of geekotest and give the container the privileges as geekotest.
+In my case, I have my github code directy in used by a local openQA instance and have the user geekotest as owner. So in my case I have to find the uid of geekotest and give the container the privileges as geekotest.
 
 ```bash
 # Find uid
