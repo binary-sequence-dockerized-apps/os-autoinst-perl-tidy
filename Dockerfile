@@ -6,7 +6,7 @@ RUN useradd -r -g nogroup nobody
 RUN zypper --gpg-auto-import-keys ref
 RUN zypper --non-interactive dup
 RUN zypper --non-interactive in --force-resolution which
-RUN zypper --non-interactive in --force-resolution perl-Perl-Tidy-20180220
+RUN zypper --non-interactive in --force-resolution perl-Perl-Tidy-20190601
 
 COPY tool/.perltidyrc /etc/os-autoinst/
 COPY tool/tidy.sh /usr/local/bin/
